@@ -1,40 +1,167 @@
-/*Normalize*/
+@import "csswizardry-grids";
 
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
-input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
-/*General*/
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
+@media all and (max-width: 1244px) {
+	.headInitial {
+  		padding-bottom: 600px;
+  		height: 100%;
+  	}
 
-.clearfix:after {
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  	.overlay {
+  		width: 33%;
+  	}
+  	.imgLogo {
+  		left: 15px;
+  	}
+
+  	.luxury h3 {
+
+  	}
+
+  	.homeGrids {
+		text-align: center;
+	}		
 }
 
-h1 {
-	font-size: 42px;
-}
-
-
-@media all and (max-width: 680px) {
-
-nav .fa {
-	position: relative;
-	display: inline-block;
-	color: #fff;
-	font-size: 42px;
-	top: 10px;
-	left: 10px;
+@media all and (max-width: 975px) {
+	ul {
+		float: right;
+	}
+	nav ul li a {
+		font-size: 15px;
+	}
+	nav ul li {
+	padding: 6px 4px;
+	}
+	nav ul li:first-child a[href^="index"] {
+		margin-left: 10px;
+	}
+	.overlay {
+		width: 43%;
+	}
+	.intro {
+		opacity: 1;
 	}
 
+	h2 {
+		font-size: 35px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	.intro p, 
+	.roomIntro p, 
+	.restaurantIntro p, 
+	.activityIntro p, 
+	.contactIntro p,
+	.luxuryBody p {
+		font-size: 16px;
+	}
+
+	.luxuryCallout {
+		width: 75%;
+
+		h3 {
+			font-size: 70px;
+		}
+	}
+	.homeImg img {
+		width: 100%;
+	}
+	.homeGrids h4 {
+		bottom: -49px;
+		font-size: 34px;
+	}
+
+	.homeGrids p {
+		font-size: 18px;
+	}
+	.homeGrids span {
+		font-size: 28px;
+	}
+	.room1, 
+	.room2, 
+	.room3 {
+		margin-left: 0px;
+	}
+	.reservationBox .ui-widget {
+		max-width: 100%;	
+	}	
+}
+
+@media all and (max-width: 800px) {
+	.overlayText h4 {
+		font-size: 40px;
+		padding-bottom: 1px;
+	}
+	.overlayText .line {
+		margin: 0 auto 3px auto;
+	}
+	
+	.activityTypes p {
+		line-height: 1.4;
+		font-size: 15px;
+	}	
+	.restaurant {
+		text-align: center;
+	}
+	.imgSection img {
+		padding-top: 10%;
+	}
+	.homeGrids p {
+		font-size: 24px;
+	}
+	.homeGrids span {
+		font-size: 30px;
+	}	
+
+	#datepicker,
+	#datepicker2 {
+		display: none;
+	}	
+
+	.fromPicker,
+	.toPicker {
+		display: block;
+	}	
+
+	.reservationBox label {
+		text-align: center;
+	}
+	
+	.reservationBox .submitButton {
+		width: 40%	
+	}	
+}
+
+@media all and (max-width: 680px) {
+	.imgLogo {
+		width: 30%;
+	}
+
+	.imgLogo a {
+		left: 0;
+		right: 0;
+		display: inherit;
+	}
+
+	.ampersand {
+		top: 107px;
+	}
+	nav .fa {
+		position: relative;
+		display: inline-block;
+		color: #fff;
+		font-size: 42px;
+		top: 10px;
+		left: 10px;
+		}
+
 	nav .fa:hover {
-		color: blue;
+		color: rgba(255,255,255,0.6);
 	}
 
 	nav .fa:hover ul li {
@@ -53,12 +180,15 @@ nav .fa {
 	 	left: 10px;
 	  	padding: 4px;
 	 	background: #000;
-	 	/*display: none;*/
+	 	display: none;
+	 	float: none;
+	 	height: auto;
 	} 
 
 	nav ul li {
 		display: block;
 		float: none;
+		z-index: 100;
 	}
 
 	 nav ul li:first-child a[href^="index"] {
@@ -67,25 +197,67 @@ nav .fa {
 	 	margin-left: 0;
 	 	float: none;
 	 }
+	
 
-
-	nav ul li:hover ul {
-  		display: none;
+	nav ul li ul {
+		position: relative;
+		height: auto;
+  		display: block;
+  		height: 100%;
+  		top: 0px;
+  		left: 5px;	
+  		background: none;
   	}
+
+  	nav ul li ul* {
+		height: 100%;
+		margin-top: 10px;
+	}
+
+  	nav ul li ul li {
+  		position: relative;
+  		display: block;
+  		padding-top: 10px;
+  		top: 0;
+  	}
+
+  	nav ul li:hover ul {
+  	  display: inhert;
+  	  position: inherit;
+  	}
+
+  	nav li a:hover {
+  	  border-bottom: 1px solid #d3f8ff;
+  	  color: #fff;
+  	}
+  	  
   
 	.navRest {
 		line-height: 1.6;
 	}
 
+	.imgLogo {
+		left: 0;
+		right: 0;
+		margin: 0 auto;	
+	}
 /*Overlay*/
 
 	.overlay {
-		width: 45%;
+		width: 54%;
+	}
+
+	.overlay1 {
+		padding: 93px 29px 20px 29px;
+	}
+
+	.introBody {
+		padding: 2% 10% 0% 10%;
 	}
 
 	.intro p,
 	.roomIntro p {
-	width: 70%;
+		width: 70%;
 	}
 
 	.quote {
@@ -128,8 +300,8 @@ nav .fa {
 
 /*Rest and Bar*/
 	.restBody {
-	margin-top: 50px;
-	  width: 75%;
+		margin-top: 50px;
+	  	width: 75%;
 	}
 
 	.foodIntro {
@@ -150,4 +322,119 @@ nav .fa {
 	.food1 {
 	  margin-left: 2.5%;
 	}
+}
+
+@media all and (max-width: 550px) {
+	.imgLogo {
+		width: 36%;
+	}
+
+	.imgLogo a {
+		position: absolute;
+		left: 0;
+		right: 0;
+		display: inline;
+		text-align: center;
+	}
+	.imgLogo .miniLogo {
+		left: 0;
+		width: 77%;
+	}
+	.overlay1 {
+		font-size: 32px;
+	}
+
+	.introBody {
+		font-size: 16px;
+	}
+
+	.overlay {
+		width: 63%;
+		right: 3%;
+	}
+	
+	button p {
+		font-size: 15px;
+	}	
+
+	.headingH2, 
+	.backImg h2, 
+	.roomHeading h2, 
+	.restaurantHeading h2, 
+	.activityHeading h2, 
+	.amenityImg h2 {
+		font-size: 50px;
+		text-align: center;
+	}	
+	
+	h4 {
+		font-size: 16px;
+	}
+	
+	.pageSubheadSpan, 
+	.backImg h4 span, 
+	.roomHeading h4 span, 
+	.restaurantHeading h4 span, 
+	.activityHeading h4 span, 
+	.amenityImg h4 span {
+		font-size: 29px;
+	}
+
+	.overlayText {
+		opacity: 1;
+		position: relative;
+		bottom: none;
+		transition: all 2s ease-in;	
+	}
+
+	.homeGrids p {
+		position: relative;
+		display: block;
+		font-size: 22px;
+		padding: 2% 4%;
+	}
+	.homeGrids span {
+		font-size: 30px;
+	}	
+
+	.homeGrids h4 {
+		display: none;
+	}	
+	.activityTypes p {
+		padding-bottom: 10px;
+	}	
+
+	.contactForm{
+		padding: 0;
+	}
+
+	.luxuryCallout {
+		width: 97%;
+	}
+	
+	.luxuryCallout h3 {
+		font-size: 60px;
+	}
+	
+	.luxuryCallout h4 {
+		font-size: 15px;
+	}	
+	.roomOverlay {
+		position: relative;
+		background: #000;
+	}
+
+	.copyright {
+		text-align: left;
+	}
+	footer p {
+		font-size: 15px;
+	}
+	.socialIcon .fa {
+		font-size: 21px;
+	}
+	.socialIcons {
+		right: 5px;
+	}				
+
 }

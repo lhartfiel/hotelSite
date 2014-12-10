@@ -64,6 +64,14 @@ $darkgray: #58595b;
   display: inline-block;
 }
 
+.submitButton {
+    background:$teal;
+    color: #fff;
+    width: 68%;
+    border: 0;
+    padding: 10px;
+    text-transform: uppercase;
+  }
 
 
 /*Normalize*/
@@ -94,11 +102,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+}
+
+.headParts {
+   position: relative;
+   top: 166px;
 }
 
 ul {
   padding-left: 0;
+
 }
 
 .book:hover,
@@ -176,8 +189,11 @@ button {
     font-size: 22px;
     margin: 0;
     color: #fff;
-
   }
+}
+
+button:hover {
+  background: darken($teal, 20%);
 }
 
 .roomButton {
@@ -186,6 +202,10 @@ button {
   float: right;
   margin-bottom: 20px;
   margin-right: 20px;  
+
+  &:hover {
+    background: darken(#d1bd2a, 20%)
+  }
 }
 
 
@@ -203,6 +223,11 @@ nav {
   z-index: 80;
   top: 0px;
   border-bottom: 5px solid $darkgray;
+  z-index: 1000;
+
+  .container {
+    margin-bottom: 0;
+  }
 }
 
 .navElements {
@@ -232,7 +257,7 @@ nav ul li a {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 17px;
-  margin: 5px 20px 5px 0;
+  margin: 5px 20px 10px 0;
   padding-bottom: 3px;
   text-decoration: none;
   color: #c1cbc3;
@@ -241,13 +266,12 @@ nav ul li a {
 nav ul li ul {
   display: none;
   padding-top: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li:hover ul {
   display: block;
   position: absolute;
-
 }
 
 nav li a:hover {
@@ -265,37 +289,61 @@ nav .fa {
 .imgLogo {
   position: absolute;
   left: -18px;
+  width: 18%;
+
+  a {
+    position: relative;
+    left: 5%;
+  }
+
+  .miniLogo {
+  display: none;
+  top: -15px;
+  left: 65px;
+  z-index: 50;
+  position: relative;
+  width: 45%;
+  }
 }
 
-// .logoBg {
-//   position: absolute;
-//   width: 0; 
-//   height: 0; 
-//   border-left: 150px solid transparent;
-//   border-right: 150px solid transparent;
-//   border-top: 150px solid rgb(0, 0, 0);
-//   top: 0;
-//   left: 0;
-// }
-
 .logo {
-    top: 0;
-    left: 65px;
-    z-index: 40;
-    position: relative;
-    width: 55%;
-    top: -18px;
-    left: 65px;
-    z-index: 40;
-    position: relative;
-    width: 66%;
+  position: relative;
+  left: 5%;
+  top: -18px;
+  z-index: 40;
+  // width: 66%;
 }
 
 /* Header*/
+
+.headInitial {
+  @extend .headingImg;
+  padding-bottom: 600px;
+  
+}
 .heading {
- @extend .headingImg;
+  opacity: 1;
   background-image: url("img/swimming-pool.jpg");
-  padding-bottom: 650px;
+  transition: background-image ease 5s;
+  
+}
+.heading2 {
+  opacity: 1;
+  background-image: url("img/homeHeader2.jpg");
+  transition: background-image ease 5s;
+
+}
+.heading3 {
+ opacity: 1;
+  background-image: url("img/homeHeader3.jpg");
+  transition: background-image ease 5s;
+ 
+}
+.heading4 {
+  opacity: 1;
+  background-image: url("img/homeHeader4.jpg");
+  transition: background-image ease 5s;
+  
 }
 
 .headingRoom,
@@ -365,7 +413,6 @@ nav .fa {
   z-index: 100;
 }
 
-
 .ampersand {
   position: absolute;
   font-family: 'Playfair Display', serif;
@@ -386,13 +433,16 @@ nav .fa {
 /*Intro*/
 
 .intro {
+  opacity: 0;
   margin-top: 14%;
   margin-bottom: 14%;
 }
 
 .intro p,
 .roomIntro p,
-.restaurantIntro p {
+.restaurantIntro p,
+.activityIntro p,
+.contactIntro p {
   font-family: 'Questrial', sans-serif;
   text-align: center;
   font-size: 18px;
@@ -475,46 +525,46 @@ nav .fa {
     font-family:'Questrial', sans-serif;
     text-transform: uppercase;
     font-size: 49px;
-    z-index: 900;
+    z-index: 1000;
   }
-
   p {
-    display: none;
-    position: absolute;
-    top: 27px;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
+    font-family: 'Playfair Display', 'Antic Didone', serif;
+    text-transform: uppercase;
     text-align: center;
     font-size: 23px;
-    width: 50%;
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15% 4%;
+    width: 100%;
+    height: 100%;
     color: #fff;
+    background: rgba(0,0,0, 0.6);
+    line-height: 1.4;
+    text-shadow: 2px 1px 1px black;
     z-index: 900;
-  }  
+  }
+
+  span {
+    font-family: 'Allura', cursive;
+    color: $teal;
+    text-transform: none;
+    font-size: 42px;
+  }
 
 }
-
 
 .homeImg {
-    position: relative;
+  position: relative;
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-}
-
-.imgOverlay {
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0,0,0, 0.5);
-      }
+  img {
+    max-width: 100%;
+    display: block;
   }
+}
 
 .homeRooms,
 .homeDining,
@@ -524,19 +574,64 @@ nav .fa {
 }
 
 /*Contact*/
-.headingContact {
-  background-image: url(img/contactHeader.png);
+
+.backImg {
+  @extend .headingImg;
+  padding-bottom: 500px;
+  background-image: url(img/contactBkg.jpg);
+  background-size: cover;
+
+  &:before {
+    @extend .headOpacity;
+  }
+
+  h2 {
+    @extend .headingH2;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  h4 {
+    @extend .pageSubhead;
+
+    span {
+      @extend .pageSubheadSpan;
+    }
+  }
 }
 
-.contactMap {
-  margin: 0 auto 30px auto;
-  width: 65%;
+.direction {
+  padding-bottom: 20px;
+}
+.contact {
+  margin: 60px auto;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+
+  h4 {
+    font-family: 'Allura', cursive;
+    font-size: 72px;
+    color: #69c7be;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
 }
 
-.rates,
-.contactSidebar {
-  float: left;
-  margin-top: 0;
+input,
+textarea {
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
 }
 
 .rates {
@@ -586,6 +681,12 @@ display: inline-block;
 .toDate label {
   display: block;
   margin-bottom: 5px;
+  color: white;
+}
+
+.fromPicker,
+.toPicker {
+  display: none;
 }
 
 .map {
@@ -598,20 +699,27 @@ display: inline-block;
 footer {
   background:#000;
   padding: 5px;
+  margin-top: 8%;
 
   p {
     color: #747575;
     text-align: center;
     display: inline-block;
     margin: 18px auto;
+    clear: both;
   }
 }
 .copyright {
   text-align: center;
+  position: relative;
 }
 .socialIcons {
-  float: right;
+  position: absolute;
+  top: 2px;
+  right: 50px;
   margin-top: 10px;
+  text-align: right;
+  width: 100%;
 }
 
 .socialIcon {
@@ -620,7 +728,7 @@ footer {
   color: #fff;
   display: inline-block;
   margin: 3px;
-  padding: 2.25%;
+  padding: 0.25%;
 
 
   .fa {
@@ -810,18 +918,14 @@ footer {
     margin: 9px auto;
   }
 
-  .submitButton {
-    background:$teal;
-    color: #fff;
-    width: 68%;
-    border: 0;
-    padding: 10px;
-    text-transform: uppercase;
-  }
-
   .ui-widget {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .submitButton {
+    width: 68%;
+    padding: 10px;
   }
 }
 
@@ -861,12 +965,7 @@ footer {
   }
 
 }
-.restaurantIntro {
-   margin-top: 13%;
-}
-.restaurant{
-    padding: 10% 3%;
-}
+
 
 .foodType {
   position: relative;
@@ -932,7 +1031,6 @@ footer {
 
 
 // Activity
-
 .activityHeading {
   @extend .headingImg;
   background-image: url('img/activityHeader.jpg');
@@ -967,8 +1065,6 @@ footer {
 }
 
 .activityIntro {
-  margin-bottom: 10%;
-  margin-top: 13%;
 
   p {
     width: 60%;
@@ -1039,4 +1135,47 @@ footer {
 }
 
   
+// Amenities
+.amenityImg {
+  @extend .headingImg;
+  background-image: url('img/amenityHeader.jpg');
+  padding-bottom: 500px;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.3));
+    opacity: .6;
+  }
+
+  h2 {
+    @extend .headingH2;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  h4 {
+     @extend .pageSubhead;
+
+     span {
+       @extend .pageSubheadSpan;
+     }
+  }
+}
+
+.amenityArea {
+  .one-third {
+    padding-right: 5%;
+  }
+
+  .two-thirds {
+    padding-left: 10%;
+    border-left: 1px solid $teal;
+  }
+}

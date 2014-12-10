@@ -371,7 +371,7 @@
 /**
  * Our responsive classes, if we have enabled them.
  */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   /**
    * Whole
    */
@@ -495,7 +495,131 @@
     width: 91.666%;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
+  /**
+   * Whole
+   */
+  .mid--one-whole {
+    width: 100%;
+  }
+
+  /**
+   * Halves
+   */
+  .mid--one-half, .mid--two-quarters, .mid--three-sixths, .mid--four-eighths, .mid--five-tenths, .mid--six-twelfths {
+    width: 50%;
+  }
+
+  /**
+   * Thirds
+   */
+  .mid--one-third, .mid--two-sixths, .mid--four-twelfths {
+    width: 33.333%;
+  }
+
+  .mid--two-thirds, .mid--four-sixths, .mid--eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+   * Quarters
+   */
+  .mid--one-quarter, .mid--two-eighths, .mid--three-twelfths {
+    width: 25%;
+  }
+
+  .mid--three-quarters, .mid--six-eighths, .mid--nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+   * Fifths
+   */
+  .mid--one-fifth, .mid--two-tenths {
+    width: 20%;
+  }
+
+  .mid--two-fifths, .mid--four-tenths {
+    width: 40%;
+  }
+
+  .mid--three-fifths, .mid--six-tenths {
+    width: 60%;
+  }
+
+  .mid--four-fifths, .mid--eight-tenths {
+    width: 80%;
+  }
+
+  /**
+   * Sixths
+   */
+  .mid--one-sixth, .mid--two-twelfths {
+    width: 16.666%;
+  }
+
+  .mid--five-sixths, .mid--ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+   * Eighths
+   */
+  .mid--one-eighth {
+    width: 12.5%;
+  }
+
+  .mid--three-eighths {
+    width: 37.5%;
+  }
+
+  .mid--five-eighths {
+    width: 62.5%;
+  }
+
+  .mid--seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+   * Tenths
+   */
+  .mid--one-tenth {
+    width: 10%;
+  }
+
+  .mid--three-tenths {
+    width: 30%;
+  }
+
+  .mid--seven-tenths {
+    width: 70%;
+  }
+
+  .mid--nine-tenths {
+    width: 90%;
+  }
+
+  /**
+   * Twelfths
+   */
+  .mid--one-twelfth {
+    width: 8.333%;
+  }
+
+  .mid--five-twelfths {
+    width: 41.666%;
+  }
+
+  .mid--seven-twelfths {
+    width: 58.333%;
+  }
+
+  .mid--eleven-twelfths {
+    width: 91.666%;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 975px) {
   /**
    * Whole
    */
@@ -1003,7 +1127,7 @@
   left: 91.666%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   /**
    * Whole
    */
@@ -1127,7 +1251,131 @@
     left: 91.666%;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
+  /**
+   * Whole
+   */
+  .push--mid--one-whole {
+    left: 100%;
+  }
+
+  /**
+   * Halves
+   */
+  .push--mid--one-half, .push--mid--two-quarters, .push--mid--three-sixths, .push--mid--four-eighths, .push--mid--five-tenths, .push--mid--six-twelfths {
+    left: 50%;
+  }
+
+  /**
+   * Thirds
+   */
+  .push--mid--one-third, .push--mid--two-sixths, .push--mid--four-twelfths {
+    left: 33.333%;
+  }
+
+  .push--mid--two-thirds, .push--mid--four-sixths, .push--mid--eight-twelfths {
+    left: 66.666%;
+  }
+
+  /**
+   * Quarters
+   */
+  .push--mid--one-quarter, .push--mid--two-eighths, .push--mid--three-twelfths {
+    left: 25%;
+  }
+
+  .push--mid--three-quarters, .push--mid--six-eighths, .push--mid--nine-twelfths {
+    left: 75%;
+  }
+
+  /**
+   * Fifths
+   */
+  .push--mid--one-fifth, .push--mid--two-tenths {
+    left: 20%;
+  }
+
+  .push--mid--two-fifths, .push--mid--four-tenths {
+    left: 40%;
+  }
+
+  .push--mid--three-fifths, .push--mid--six-tenths {
+    left: 60%;
+  }
+
+  .push--mid--four-fifths, .push--mid--eight-tenths {
+    left: 80%;
+  }
+
+  /**
+   * Sixths
+   */
+  .push--mid--one-sixth, .push--mid--two-twelfths {
+    left: 16.666%;
+  }
+
+  .push--mid--five-sixths, .push--mid--ten-twelfths {
+    left: 83.333%;
+  }
+
+  /**
+   * Eighths
+   */
+  .push--mid--one-eighth {
+    left: 12.5%;
+  }
+
+  .push--mid--three-eighths {
+    left: 37.5%;
+  }
+
+  .push--mid--five-eighths {
+    left: 62.5%;
+  }
+
+  .push--mid--seven-eighths {
+    left: 87.5%;
+  }
+
+  /**
+   * Tenths
+   */
+  .push--mid--one-tenth {
+    left: 10%;
+  }
+
+  .push--mid--three-tenths {
+    left: 30%;
+  }
+
+  .push--mid--seven-tenths {
+    left: 70%;
+  }
+
+  .push--mid--nine-tenths {
+    left: 90%;
+  }
+
+  /**
+   * Twelfths
+   */
+  .push--mid--one-twelfth {
+    left: 8.333%;
+  }
+
+  .push--mid--five-twelfths {
+    left: 41.666%;
+  }
+
+  .push--mid--seven-twelfths {
+    left: 58.333%;
+  }
+
+  .push--mid--eleven-twelfths {
+    left: 91.666%;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 975px) {
   /**
    * Whole
    */
@@ -1635,7 +1883,7 @@
   right: 91.666%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   /**
    * Whole
    */
@@ -1759,7 +2007,131 @@
     right: 91.666%;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
+  /**
+   * Whole
+   */
+  .pull--mid--one-whole {
+    right: 100%;
+  }
+
+  /**
+   * Halves
+   */
+  .pull--mid--one-half, .pull--mid--two-quarters, .pull--mid--three-sixths, .pull--mid--four-eighths, .pull--mid--five-tenths, .pull--mid--six-twelfths {
+    right: 50%;
+  }
+
+  /**
+   * Thirds
+   */
+  .pull--mid--one-third, .pull--mid--two-sixths, .pull--mid--four-twelfths {
+    right: 33.333%;
+  }
+
+  .pull--mid--two-thirds, .pull--mid--four-sixths, .pull--mid--eight-twelfths {
+    right: 66.666%;
+  }
+
+  /**
+   * Quarters
+   */
+  .pull--mid--one-quarter, .pull--mid--two-eighths, .pull--mid--three-twelfths {
+    right: 25%;
+  }
+
+  .pull--mid--three-quarters, .pull--mid--six-eighths, .pull--mid--nine-twelfths {
+    right: 75%;
+  }
+
+  /**
+   * Fifths
+   */
+  .pull--mid--one-fifth, .pull--mid--two-tenths {
+    right: 20%;
+  }
+
+  .pull--mid--two-fifths, .pull--mid--four-tenths {
+    right: 40%;
+  }
+
+  .pull--mid--three-fifths, .pull--mid--six-tenths {
+    right: 60%;
+  }
+
+  .pull--mid--four-fifths, .pull--mid--eight-tenths {
+    right: 80%;
+  }
+
+  /**
+   * Sixths
+   */
+  .pull--mid--one-sixth, .pull--mid--two-twelfths {
+    right: 16.666%;
+  }
+
+  .pull--mid--five-sixths, .pull--mid--ten-twelfths {
+    right: 83.333%;
+  }
+
+  /**
+   * Eighths
+   */
+  .pull--mid--one-eighth {
+    right: 12.5%;
+  }
+
+  .pull--mid--three-eighths {
+    right: 37.5%;
+  }
+
+  .pull--mid--five-eighths {
+    right: 62.5%;
+  }
+
+  .pull--mid--seven-eighths {
+    right: 87.5%;
+  }
+
+  /**
+   * Tenths
+   */
+  .pull--mid--one-tenth {
+    right: 10%;
+  }
+
+  .pull--mid--three-tenths {
+    right: 30%;
+  }
+
+  .pull--mid--seven-tenths {
+    right: 70%;
+  }
+
+  .pull--mid--nine-tenths {
+    right: 90%;
+  }
+
+  /**
+   * Twelfths
+   */
+  .pull--mid--one-twelfth {
+    right: 8.333%;
+  }
+
+  .pull--mid--five-twelfths {
+    right: 41.666%;
+  }
+
+  .pull--mid--seven-twelfths {
+    right: 58.333%;
+  }
+
+  .pull--mid--eleven-twelfths {
+    right: 91.666%;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 975px) {
   /**
    * Whole
    */
@@ -2148,7 +2520,7 @@
   padding-left: 0;
 }
 
-.headingImg, .heading, .roomHeading, .restaurantHeading, .activityHeading {
+.headingImg, .headInitial, .backImg, .roomHeading, .restaurantHeading, .activityHeading, .amenityImg {
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -2158,7 +2530,7 @@
   border-bottom: 24px solid black;
 }
 
-.headingH2, .roomHeading h2, .restaurantHeading h2, .activityHeading h2 {
+.headingH2, .backImg h2, .roomHeading h2, .restaurantHeading h2, .activityHeading h2, .amenityImg h2 {
   font-size: 80px;
   display: block;
   text-shadow: 2px 2px 1px black;
@@ -2169,7 +2541,7 @@
   color: #69c7be;
 }
 
-.pageSubhead, .roomHeading h4, .restaurantHeading h4, .activityHeading h4 {
+.pageSubhead, .backImg h4, .roomHeading h4, .restaurantHeading h4, .activityHeading h4, .amenityImg h4 {
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
   max-width: 100%;
@@ -2181,13 +2553,13 @@
   float: right;
 }
 
-.pageSubheadSpan, .roomHeading h4 span, .restaurantHeading h4 span, .activityHeading h4 span {
+.pageSubheadSpan, .backImg h4 span, .roomHeading h4 span, .restaurantHeading h4 span, .activityHeading h4 span, .amenityImg h4 span {
   font-family: 'Allura', cursive;
   color: rgba(255, 255, 255, 0.7);
   font-size: 41px;
 }
 
-.headOpacity, .roomHeading:before {
+.headOpacity, .backImg:before, .roomHeading:before {
   content: '';
   position: absolute;
   top: 0;
@@ -2203,6 +2575,15 @@
   top: 30%;
   right: 5%;
   display: inline-block;
+}
+
+.submitButton {
+  background: #69c7be;
+  color: #fff;
+  width: 68%;
+  border: 0;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 /*Normalize*/
@@ -2386,6 +2767,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
 }
 
+.headParts {
+  position: relative;
+  top: 166px;
+}
+
 ul {
   padding-left: 0;
 }
@@ -2464,12 +2850,19 @@ button p {
   color: #fff;
 }
 
+button:hover {
+  background: #37938a;
+}
+
 .roomButton {
   background: #d1bd2a;
   padding: 1% 5%;
   float: right;
   margin-bottom: 20px;
   margin-right: 20px;
+}
+.roomButton:hover {
+  background: #7c7019;
 }
 
 /*Navigation*/
@@ -2485,6 +2878,10 @@ nav {
   z-index: 80;
   top: 0px;
   border-bottom: 5px solid #58595b;
+  z-index: 1000;
+}
+nav .container {
+  margin-bottom: 0;
 }
 
 .navElements {
@@ -2513,7 +2910,7 @@ nav ul li a {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 17px;
-  margin: 5px 20px 5px 0;
+  margin: 5px 20px 10px 0;
   padding-bottom: 3px;
   text-decoration: none;
   color: #c1cbc3;
@@ -2522,7 +2919,7 @@ nav ul li a {
 nav ul li ul {
   display: none;
   padding-top: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li:hover ul {
@@ -2544,25 +2941,55 @@ nav .fa {
 .imgLogo {
   position: absolute;
   left: -18px;
+  width: 18%;
+}
+.imgLogo a {
+  position: relative;
+  left: 5%;
+}
+.imgLogo .miniLogo {
+  display: none;
+  top: -15px;
+  left: 65px;
+  z-index: 50;
+  position: relative;
+  width: 45%;
 }
 
 .logo {
-  top: 0;
-  left: 65px;
-  z-index: 40;
   position: relative;
-  width: 55%;
+  left: 5%;
   top: -18px;
-  left: 65px;
   z-index: 40;
-  position: relative;
-  width: 66%;
 }
 
 /* Header*/
+.headInitial {
+  padding-bottom: 600px;
+}
+
 .heading {
+  opacity: 1;
   background-image: url("img/swimming-pool.jpg");
-  padding-bottom: 650px;
+  transition: background-image ease 5s;
+}
+
+.heading2 {
+  opacity: 1;
+  background-image: url("img/homeHeader2.jpg");
+  transition: background-image ease 5s;
+}
+
+.heading3 {
+  opacity: 1;
+  background-image: url("img/homeHeader3.jpg");
+  transition: background-image ease 5s;
+}
+
+.heading4 {
+  opacity: 1;
+  background-image: url("img/homeHeader4.jpg");
+  transition: background-image ease 5s;
 }
 
 .headingRoom,
@@ -2650,13 +3077,16 @@ nav .fa {
 
 /*Intro*/
 .intro {
+  opacity: 0;
   margin-top: 14%;
   margin-bottom: 14%;
 }
 
 .intro p,
 .roomIntro p,
-.restaurantIntro p {
+.restaurantIntro p,
+.activityIntro p,
+.contactIntro p {
   font-family: 'Questrial', sans-serif;
   text-align: center;
   font-size: 18px;
@@ -2731,20 +3161,33 @@ nav .fa {
   font-family: 'Questrial', sans-serif;
   text-transform: uppercase;
   font-size: 49px;
-  z-index: 900;
+  z-index: 1000;
 }
 .homeGrids p {
-  display: none;
-  position: absolute;
-  top: 27px;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
+  font-family: 'Playfair Display', 'Antic Didone', serif;
+  text-transform: uppercase;
   text-align: center;
   font-size: 23px;
-  width: 50%;
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15% 4%;
+  width: 100%;
+  height: 100%;
   color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  line-height: 1.4;
+  text-shadow: 2px 1px 1px black;
   z-index: 900;
+}
+.homeGrids span {
+  font-family: 'Allura', cursive;
+  color: #69c7be;
+  text-transform: none;
+  font-size: 42px;
 }
 
 .homeImg {
@@ -2755,16 +3198,6 @@ nav .fa {
   display: block;
 }
 
-.imgOverlay:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .homeRooms,
 .homeDining,
 .homeActivities {
@@ -2773,19 +3206,44 @@ nav .fa {
 }
 
 /*Contact*/
-.headingContact {
-  background-image: url(img/contactHeader.png);
+.backImg {
+  padding-bottom: 500px;
+  background-image: url(img/contactBkg.jpg);
+  background-size: cover;
+}
+.backImg span {
+  color: #fff;
 }
 
-.contactMap {
-  margin: 0 auto 30px auto;
-  width: 65%;
+.direction {
+  padding-bottom: 20px;
 }
 
-.rates,
-.contactSidebar {
-  float: left;
-  margin-top: 0;
+.contact {
+  margin: 60px auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+.contact h4 {
+  font-family: 'Allura', cursive;
+  font-size: 72px;
+  color: #69c7be;
+  text-align: center;
+  margin: 0;
+}
+.contact p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
 }
 
 .rates {
@@ -2835,6 +3293,12 @@ select {
 .toDate label {
   display: block;
   margin-bottom: 5px;
+  color: white;
+}
+
+.fromPicker,
+.toPicker {
+  display: none;
 }
 
 .map {
@@ -2845,21 +3309,28 @@ select {
 footer {
   background: #000;
   padding: 5px;
+  margin-top: 8%;
 }
 footer p {
   color: #747575;
   text-align: center;
   display: inline-block;
   margin: 18px auto;
+  clear: both;
 }
 
 .copyright {
   text-align: center;
+  position: relative;
 }
 
 .socialIcons {
-  float: right;
+  position: absolute;
+  top: 2px;
+  right: 50px;
   margin-top: 10px;
+  text-align: right;
+  width: 100%;
 }
 
 .socialIcon {
@@ -2868,7 +3339,7 @@ footer p {
   color: #fff;
   display: inline-block;
   margin: 3px;
-  padding: 2.25%;
+  padding: 0.25%;
 }
 .socialIcon .fa {
   display: block;
@@ -3019,17 +3490,13 @@ footer p {
   height: 200px;
   margin: 9px auto;
 }
-.reservationBox .submitButton {
-  background: #69c7be;
-  color: #fff;
-  width: 68%;
-  border: 0;
-  padding: 10px;
-  text-transform: uppercase;
-}
 .reservationBox .ui-widget {
   max-width: 90%;
   margin: 0 auto;
+}
+.reservationBox .submitButton {
+  width: 68%;
+  padding: 10px;
 }
 
 .restaurantHeading {
@@ -3048,14 +3515,6 @@ footer p {
 }
 .restaurantHeading span {
   color: #fff;
-}
-
-.restaurantIntro {
-  margin-top: 13%;
-}
-
-.restaurant {
-  padding: 10% 3%;
 }
 
 .foodType {
@@ -3127,10 +3586,6 @@ footer p {
   color: #fff;
 }
 
-.activityIntro {
-  margin-bottom: 10%;
-  margin-top: 13%;
-}
 .activityIntro p {
   width: 60%;
   margin: 0 auto;
@@ -3193,6 +3648,32 @@ footer p {
 }
 .overlayText:hover {
   opacity: 1;
+}
+
+.amenityImg {
+  background-image: url("img/amenityHeader.jpg");
+  padding-bottom: 500px;
+}
+.amenityImg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+  opacity: .6;
+}
+.amenityImg span {
+  color: #fff;
+}
+
+.amenityArea .one-third, .amenityArea .two-sixths, .amenityArea .four-twelfths {
+  padding-right: 5%;
+}
+.amenityArea .two-thirds, .amenityArea .four-sixths, .amenityArea .eight-twelfths {
+  padding-left: 10%;
+  border-left: 1px solid #69c7be;
 }
 
 /*# sourceMappingURL=style.css.map */
