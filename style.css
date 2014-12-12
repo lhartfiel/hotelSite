@@ -2520,14 +2520,14 @@
   padding-left: 0;
 }
 
-.headingImg, .headInitial, .backImg, .roomHeading, .restaurantHeading, .activityHeading, .amenityImg {
+.headingImg, .heading, .heading2, .heading3, .heading4, .backImg, .roomHeading, .restaurantHeading, .activityHeading, .amenityImg {
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   background-size: cover;
   z-index: 10;
-  margin-top: 30px;
-  border-bottom: 24px solid black;
+  padding-top: 30px;
+  padding-bottom: 650px;
 }
 
 .headingH2, .backImg h2, .roomHeading h2, .restaurantHeading h2, .activityHeading h2, .amenityImg h2 {
@@ -2869,6 +2869,8 @@ button:hover {
 nav {
   width: 100%;
   position: fixed;
+  -webkit-backface-visibility: hidden;
+  display: table;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 0;
@@ -2879,6 +2881,7 @@ nav {
   top: 0px;
   border-bottom: 5px solid #58595b;
   z-index: 1000;
+  clear: both;
 }
 nav .container {
   margin-bottom: 0;
@@ -2887,6 +2890,7 @@ nav .container {
 .navElements {
   position: relative;
   padding-left: 150px;
+  top: 0;
 }
 
 nav ul li {
@@ -2964,32 +2968,24 @@ nav .fa {
 }
 
 /* Header*/
-.headInitial {
-  padding-bottom: 600px;
-}
-
 .heading {
   opacity: 1;
   background-image: url("img/swimming-pool.jpg");
-  transition: background-image ease 5s;
 }
 
 .heading2 {
   opacity: 1;
   background-image: url("img/homeHeader2.jpg");
-  transition: background-image ease 5s;
 }
 
 .heading3 {
   opacity: 1;
   background-image: url("img/homeHeader3.jpg");
-  transition: background-image ease 5s;
 }
 
 .heading4 {
   opacity: 1;
   background-image: url("img/homeHeader4.jpg");
-  transition: background-image ease 5s;
 }
 
 .headingRoom,
@@ -3030,6 +3026,7 @@ nav .fa {
   background: rgba(0, 0, 0, 0.7);
   z-index: 50;
   text-align: center;
+  top: 0;
 }
 
 .introBody {
@@ -3054,7 +3051,7 @@ nav .fa {
   color: #fff;
   margin-bottom: 0px;
   top: 13px;
-  padding: 50px 29px 20px 29px;
+  padding: 94px 29px 20px 29px;
   color: #69c7be;
   z-index: 100;
 }
@@ -3063,7 +3060,7 @@ nav .fa {
   position: absolute;
   font-family: 'Playfair Display', serif;
   right: 24px;
-  top: 58px;
+  top: 102px;
   font-size: 92px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -3075,11 +3072,16 @@ nav .fa {
   text-align: center;
 }
 
+.headerLine {
+  border-top: 24px solid #000;
+}
+
 /*Intro*/
 .intro {
   opacity: 0;
-  margin-top: 14%;
+  margin-top: 0;
   margin-bottom: 14%;
+  padding-top: 14%;
 }
 
 .intro p,
@@ -3356,10 +3358,6 @@ footer p {
 
 .ImgSection {
   position: relative;
-}
-
-.roomIntro {
-  margin-top: 13%;
 }
 
 .roomGeneral {

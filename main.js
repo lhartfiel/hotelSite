@@ -1,20 +1,4 @@
 
-// homepage hero image slider
-// var homeHero = function(){		
-// 	var homeClasses = ['heading', 'heading2', 'heading3', 'heading4'];
-// 	i = 0
-
-// 	$.each(homeClasses, function(i, value){
-// 		$('.headInitial').removeClass(homeClasses).addClass(homeClasses[i]).css({'opacity': 1}).show().delay(1000).fadeOut(1000);
-// 			if(i == homeClasses.length - 1){
-// 				i = 0;
-// 			} else {
-// 				i++;
-// 			}
-// 			console.log(value)
-// 	});
-// };
-
 var homeHero = function(){
 	var homeClasses = ['heading', 'heading2', 'heading3', 'heading4'];
 	counter = 0;
@@ -56,14 +40,12 @@ var homeHero = function(){
 // };	
 
 
-	
-
 var logoChange = function(){
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 500) {
 			$('.logo').hide();
 			$('.miniLogo').show();
-			$('.imgLogo').css({'top':'15px', 'left':'0px'});
+			// $('.imgLogo').css({'top':'15px', 'left':'0px'});
 			$('.intro').animate({'opacity':1}, 1200);	
 		} else {
 			$('.logo').show();
@@ -121,13 +103,10 @@ var pickDate = function(){
 
 // Navigation hamburger bar
 var hamburgerNav = function(){
-	// $('nav .fa').on('click', function(){
-	// 	$('nav ul').slideUp(1000).stop();
-	// });
 	$('nav .fa').on('click', function(){
 		$('nav ul').slideToggle('slow', function(){
 			$('nav ul li ul').show();	
-		})
+		});
 	});
 };
 

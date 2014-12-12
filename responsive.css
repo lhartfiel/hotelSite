@@ -1,15 +1,14 @@
-@import "csswizardry-grids";
-
-
 
 @media all and (max-width: 1244px) {
-	.headInitial {
-  		padding-bottom: 600px;
-  		height: 100%;
-  	}
-
   	.overlay {
   		width: 33%;
+  		top: 0;
+  	}
+  	.overlay1 {
+  		padding: 94px 29px 20px 29px;
+  	}
+  	.amersand {
+  		top: 103px;
   	}
   	.imgLogo {
   		left: 15px;
@@ -40,6 +39,9 @@
 	.overlay {
 		width: 43%;
 	}
+	.overlay1 {
+		padding: 77px 29px 20px 29px;
+	}
 	.intro {
 		opacity: 1;
 	}
@@ -62,11 +64,11 @@
 	}
 
 	.luxuryCallout {
-		width: 75%;
-
-		h3 {
+		width: 75%;	
+	}
+	.luxuryCallout h3 {
 			font-size: 70px;
-		}
+
 	}
 	.homeImg img {
 		width: 100%;
@@ -138,19 +140,43 @@
 }
 
 @media all and (max-width: 680px) {
+
 	.imgLogo {
-		width: 30%;
+	  display: block;
+	  margin: 0 auto;
+	  right: 0;
+	  left: 0;
+	  width: 21%;
 	}
-
 	.imgLogo a {
-		left: 0;
-		right: 0;
-		display: inherit;
+	  	display: block;
+	    left: 0;
 	}
+	.imgLogo .miniLogo {
+	    display: none;
+	    top: 0px;
+	    left: 0px;
+	    right: 0px;
+	    z-index: 50;
+	    width: 100%;
+	    }
 
+	.logo {
+	  position: relative;
+	  left: 0;
+	  right: 0;
+	  top: -18px;
+	  z-index: 40;
+	}
+	
 	.ampersand {
 		top: 107px;
 	}
+
+	nav {
+		position: fixed;
+	}
+
 	nav .fa {
 		position: relative;
 		display: inline-block;
@@ -158,7 +184,7 @@
 		font-size: 42px;
 		top: 10px;
 		left: 10px;
-		}
+	}
 
 	nav .fa:hover {
 		color: rgba(255,255,255,0.6);
@@ -236,11 +262,6 @@
 		line-height: 1.6;
 	}
 
-	.imgLogo {
-		left: 0;
-		right: 0;
-		margin: 0 auto;	
-	}
 /*Overlay*/
 
 	.overlay {
@@ -326,22 +347,22 @@
 
 @media all and (max-width: 550px) {
 	.imgLogo {
-		width: 36%;
+		width: 34%;
+		position: absolute;
+		top: 0;
 	}
 
 	.imgLogo a {
-		position: absolute;
-		left: 0;
-		right: 0;
-		display: inline;
-		text-align: center;
+		display: block
 	}
 	.imgLogo .miniLogo {
 		left: 0;
 		width: 77%;
 	}
+	
 	.overlay1 {
 		font-size: 32px;
+		padding: 118px 29px 20px 29px;
 	}
 
 	.introBody {
@@ -423,6 +444,12 @@
 		position: relative;
 		background: #000;
 	}
+	.amenityArea .two-thirds {
+		border-left: none;
+	}
+	.amenityArea ul {
+		float: none;
+	}
 
 	.copyright {
 		text-align: left;
@@ -436,5 +463,5 @@
 	.socialIcons {
 		right: 5px;
 	}				
-
+	
 }
